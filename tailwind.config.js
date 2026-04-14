@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./pages/**/*.html"
+    "./pages/**/*.html",
+    "./portfolio.html"
   ],
   theme: {
     extend: {

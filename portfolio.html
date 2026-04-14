@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - VOS Prime</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="antialiased selection:bg-cyan-500 selection:text-black overflow-x-hidden">
+    <!-- Grid Overlay Background -->
+    <div class="fixed inset-0 pointer-events-none z-0 flex justify-center opacity-30">
+        <div class="w-full h-full max-w-[1600px] flex justify-between px-4">
+            <div class="w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+            <div class="w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+            <div class="w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+            <div class="w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+            <div class="w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center py-6 px-6 lg:px-12 bg-black/40 backdrop-blur-md border-b border-white/5">
+        <div class="w-full flex items-center justify-between max-w-[1600px] mx-auto">
+            <div class="flex items-center gap-12 flex-1">
+                <a href="index.html#services" class="text-[12px] uppercase tracking-[0.4em] text-zinc-300 hover:text-white transition-colors font-medium hidden lg:block">Services</a>
+                <a href="index.html#technologies" class="text-[12px] uppercase tracking-[0.4em] text-zinc-300 hover:text-white transition-colors font-medium hidden lg:block">Technologies</a>
+                <a href="#" class="text-[12px] uppercase tracking-[0.4em] text-cyan-400 hover:text-cyan-300 transition-colors font-medium hidden lg:block">Portfolio</a>
+            </div>
+
+            <a href="index.html" class="text-2xl lg:text-3xl font-bold tracking-tight text-white text-center flex-shrink-0">
+                VOS<span class="text-cyan-500">_</span>Prime
+            </a>
+
+            <div class="flex items-center gap-8 lg:gap-12 flex-1 justify-end">
+                <a href="index.html#contact" class="px-6 lg:px-8 py-2.5 bg-cyan-500 text-black text-xs font-bold uppercase tracking-widest rounded-full hover:bg-cyan-400 transition-all">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="py-48 relative z-10 mt-16">
+        <div class="container mx-auto px-6 text-center animate-on-scroll opacity-0">
+            <span class="text-[10px] uppercase tracking-[0.4em] text-cyan-500 mb-4 block font-medium">Selected Works</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8">
+                Our <span class="text-gradient">Portfolio</span>
+            </h1>
+            <p class="text-zinc-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                A showcase of our recent projects, from enterprise dashboards to creative multimedia editing and modern user interfaces.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="pb-48 relative z-10 border-t border-white/5 pt-24 bg-zinc-950/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: Cognizant Dashboards -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-200">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-cyan-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-cyan-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-cyan-500 to-violet-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="layout-dashboard" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Data Automation</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">Enterprise Dashboards</h3>
+                            <div class="text-sm text-cyan-400 font-medium mb-4">Client: Cognizant</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Developed automated tracking dashboards to monitor and visualize employee working hour details. Engineered using Google Apps Script to seamlessly synchronize and process complex data pipelines directly from Google Sheets.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Apps Script</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Google Sheets</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Shoe Store UI/UX -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-300">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-violet-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-violet-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="palette" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">UI/UX Design</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">Premium Shoe Store</h3>
+                            <div class="text-sm text-violet-400 font-medium mb-4">E-commerce Experience</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Designed a modern, conversion-optimized user interface for an online footwear retailer. Focused on seamless product discovery, immersive 3D product previews, and a frictionless checkout process.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Figma</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Wireframing</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Video & Audio Editing -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-400">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-cyan-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-cyan-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-zinc-800 rounded-2xl flex items-center justify-center mb-6 border border-white/10">
+                                <i data-lucide="lock" class="size-7 text-zinc-400"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Multimedia Production</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">Video & Audio Editing</h3>
+                            <div class="text-sm text-zinc-400 font-medium mb-4 flex items-center gap-2">
+                                <i data-lucide="shield-alert" class="size-4"></i> Confidential Client
+                            </div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Delivered professional-grade video and audio post-production services including color grading, sound mixing, and VFX. 
+                                <br><br>
+                                <em class="text-xs opacity-75">* Visual assets are restricted under NDA.</em>
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Premiere Pro</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">After Effects</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Audition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Bible Sales Pages -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-500">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-violet-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-violet-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="book-open" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Conversion Optimization</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">Bible Sales Pages</h3>
+                            <div class="text-sm text-violet-400 font-medium mb-4">E-commerce Landing Pages</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Designed and developed high-converting sales pages tailored for Bible distributions. Implemented modern UI/UX principles and conversion rate optimization (CRO) strategies, leading to a significant, measurable increase in overall sales and user engagement.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">CRO</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Web Design</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: DV360 Campaigns -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-600">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-cyan-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-cyan-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-cyan-500 to-violet-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="target" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Programmatic Advertising</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">DV360 Ad Campaigns</h3>
+                            <div class="text-sm text-cyan-400 font-medium mb-4">Digital Marketing Success</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Strategized and executed high-performing Display & Video 360 (DV360) campaigns. Leveraged advanced audience targeting, custom bidding algorithms, and real-time data analysis to significantly reduce CPA and scale overall conversions.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">DV360</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Programmatic</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">AdTech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Salesforce Implementation -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-700">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-violet-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-violet-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="cloud" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Enterprise CRM</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">Salesforce Integration</h3>
+                            <div class="text-sm text-violet-400 font-medium mb-4">International Client</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Architected and deployed a highly customized Salesforce CRM solution for a global enterprise. Streamlined their cross-border sales pipelines, automated complex lead workflows, and seamlessly integrated third-party applications.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Salesforce</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">CRM</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: GenAI Integration -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-800">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-cyan-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-cyan-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-cyan-500 to-violet-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="sparkles" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Artificial Intelligence</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">GenAI Enterprise Assistant</h3>
+                            <div class="text-sm text-cyan-400 font-medium mb-4">LLM Integration</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Developed a custom Generative AI solution integrating advanced Large Language Models (LLMs) via Retrieval-Augmented Generation (RAG). Automated internal knowledge retrieval and customer support, drastically reducing response times and improving accuracy.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">OpenAI</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">RAG</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Full Stack SaaS -->
+                <div class="group animate-on-scroll opacity-0 animation-delay-800">
+                    <div class="service-card h-full bg-zinc-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:border-violet-500/30 transition-all duration-500 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 size-48 bg-violet-500/5 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="size-14 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="layers" class="size-7 text-white"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2 block">Full Stack Development</span>
+                            <h3 class="text-2xl font-bold mb-3 text-white">SaaS Management Platform</h3>
+                            <div class="text-sm text-violet-400 font-medium mb-4">End-to-End Solution</div>
+                            <p class="text-zinc-400 leading-relaxed mb-6">
+                                Architected and developed a scalable, multi-tenant SaaS platform. Built a highly responsive React frontend, a robust Node.js backend API, and an optimized PostgreSQL database, fully deployed on AWS infrastructure.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">React</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">Node.js</span>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-300 border border-white/5">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-8">
+                    <a href="index.html" class="text-2xl font-bold tracking-tight text-white">
+                        VOS<span class="text-cyan-500">_</span>Prime
+                    </a>
+                    <div class="hidden md:flex items-center gap-6 text-[10px] uppercase tracking-[0.3em]">
+                        <a href="index.html#services" class="text-zinc-500 hover:text-white transition-colors">Services</a>
+                        <a href="index.html#technologies" class="text-zinc-500 hover:text-white transition-colors">Technologies</a>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 transition-colors">Portfolio</a>
+                        <a href="index.html#contact" class="text-zinc-500 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="#" class="size-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:border-cyan-500 transition-all">
+                        <i data-lucide="linkedin" class="size-5 text-white"></i>
+                    </a>
+                    <a href="#" class="size-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-violet-500 hover:border-violet-500 transition-all">
+                        <i data-lucide="github" class="size-5 text-white"></i>
+                    </a>
+                    <a href="#" class="size-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:border-cyan-500 transition-all">
+                        <i data-lucide="twitter" class="size-5 text-white"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
+                <p>© 2026 VOS Prime. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Intersection Observer for scroll animations
+        (function () {
+            const style = document.createElement("style");
+            style.textContent = `
+                .animate-on-scroll { animation-play-state: paused !important; }
+                .animate-on-scroll.animate { animation-play-state: running !important; }
+            `;
+            document.head.appendChild(style);
+
+            if (!window.__inViewIO) {
+                window.__inViewIO = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                            window.__inViewIO.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+            }
+
+            window.initInViewAnimations = function (selector = ".animate-on-scroll") {
+                document.querySelectorAll(selector).forEach((el) => window.__inViewIO.observe(el));
+            };
+
+            document.addEventListener("DOMContentLoaded", () => initInViewAnimations());
+        })();
+    </script>
+</body>
+
+</html>
